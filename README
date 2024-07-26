@@ -1,0 +1,10 @@
+Running the Java Backend server:
+./mvnw spring-boot:run
+
+To Package the program:
+./mvnw clean package
+
+Running the Frontend server:
+
+npm install
+npm start
