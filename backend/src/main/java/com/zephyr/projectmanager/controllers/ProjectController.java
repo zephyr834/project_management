@@ -29,12 +29,12 @@ public class ProjectController {
     private ProjectService projectService;
 
     @GetMapping("/")
-    List<Project> projects() {
+    List<Project> getAllProjects() {
         return projectService.getAllProjects();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getProject(@PathVariable Long id) {
+    public ResponseEntity<?> getProjectById(@PathVariable Long id) {
         return ResponseEntity.ok(projectService.findProjectById(id));
     }
 

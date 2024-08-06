@@ -5,7 +5,7 @@ const ProjectList = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect( () => {
-        axios.get('/api/projects')
+        axios.get('/api/projects/')
             .then(response => setProjects(response.data) )
             .catch(error => console.error(error));
     }, []);
