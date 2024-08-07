@@ -7,6 +7,7 @@ server:
     include-message: always
 
 cors:
+  urls: "http://localhost:3000"
   allowed-origins: "*"
   allowed-methods: "*"
   allowed-headers: "*"

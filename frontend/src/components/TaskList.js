@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import apiClient from './ApiClient';
+// import axios from 'axios';
+
+// const apiClient = axios.create({
+//     baseURL: "http://localhost:8080",
+//     withCredentials: false
+//   });
 
 const TaskList = () => {
     const [tasks, setTasks] = useState([]);
 
     useEffect( () => {
-        axios.get('/api/task')
+        apiClient.get('/api/v1/tasks/')
             .then(response => setTasks(response.data) )
             .catch(error => console.error(error));
     }, []);
@@ -15,7 +21,7 @@ const TaskList = () => {
             <h1>Tasks</h1>
             <ul>
                 {tasks.map ( task => (
-                    <li key={task.id}>{task.name}</li>
+                    <li key={task.id}>{task.task}</li>
                 ))}
             </ul>
         </div>
