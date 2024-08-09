@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// TODO: Update BaseUrl for production
 const apiClient = axios.create({
     baseURL: "http://localhost:3000",
     withCredentials: false
