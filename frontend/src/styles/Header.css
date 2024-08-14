@@ -1,6 +1,7 @@
 header {
     background-color: #222;
     height: 100px;
+    position: sticky;
 }
 
 .header-div {
