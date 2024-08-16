@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from './components/Layout';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './styles/App.css';
 import Page404 from './Pages/Page404';
 import routePaths from './Routing/RoutePaths';
 

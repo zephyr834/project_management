@@ -5,16 +5,12 @@ import PathConstants from "../Routing/PathConstants";
 export default function Header() {
     return (
         <header>
-            <div className="header-div">
-                <h1 className="title">
+            <div class="h-20 flex items-center justify-between bg-gray-800">
+                <h1 class="text-white text-xl font-bold header-div">
                     <Link to={PathConstants.HOME}>Another PM Tool</Link>
                 </h1>
-                <nav className="navbar">
-                <ul className="nav-list">
-                    <li className="nav-item">
-                    <Link to={PathConstants.TASKLIST}>Tasks</Link>
-                    </li>
-                </ul>
+                <nav class="text-white font-bold">
+                    <Link to={PathConstants.TASKLIST} class="m-8 p-8">Tasks</Link>
                 </nav>
             </div>
         </header>
