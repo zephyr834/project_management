@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from './components/Layout';
+import Layout from '../components/Layout';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Page404 from './Pages/Page404';
-import routePaths from './Routing/RoutePaths';
+import Page404 from '../Pages/Page404';
+import routePaths from '../routing/RoutePaths';
 
     
 const App = () => {

@@ -191,6 +191,7 @@ module.exports = {
             pink: colors.pink,
             rose: colors.rose,
             'c-blue': 'rgb(20, 83, 137)',
+            'c-white': '#dfe3e6'
         }),
         columns: {
         auto: 'auto',

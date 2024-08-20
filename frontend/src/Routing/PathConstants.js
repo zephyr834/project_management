@@ -1,6 +1,6 @@
 const PathConstants = {
     HOME: "/",
-    TASKLIST: "tasks",
+    SETTINGS: "settings",
 }
 
 export default PathConstants;
