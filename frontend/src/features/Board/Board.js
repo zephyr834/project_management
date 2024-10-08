@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import List from '../List/List';
+import List from '../../components/List/List';
 
 class Board extends Component {
     render() {

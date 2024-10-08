@@ -1,8 +1,8 @@
 import { combineReducers, createStore } from "redux";
 import throttle from "lodash.throttle";
 import board from '../features/Board/BoardReducer';
-import listsById from '../features/List/ListReducer';
-import cardsById from '../features/Card/CardReducer';
+import listsById from '../components/List/ListReducer';
+import cardsById from '../components/Card/CardReducer';
 import seed from "../utils/seed";
 
 
