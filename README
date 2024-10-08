@@ -8,3 +8,6 @@ Running the Frontend server:
 
 npm install
 npm start
+
+To update Output.css from tailwind during development:
+npx tailwindcss -i src/styles/index.css -o src/styles/output.css --watch
