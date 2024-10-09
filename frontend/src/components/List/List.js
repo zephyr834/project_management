@@ -50,8 +50,8 @@ class List extends Component {
                         adding
                     />
                 ) : (
-                    <div className="cursor-pointer p-2.5 text-gray-500 rounded-b-lg flex items-center hover:bg-[#092d4223] hover:text-[#17394d] hover:underline" onClick={this.toggleAddingCard} >
-                        <ion-icon name="add" className="mr-0.5" />Add Card
+                    <div className="cursor-pointer p-2.5 text-gray-500 rounded-b-lg flex items-center hover:bg-slate-300 hover:text-slate-800 hover:underline" onClick={this.toggleAddingCard} >
+                        <ion-icon name="add" className="mr-1" />Add Card
                     </div>
                 )}
             </div>

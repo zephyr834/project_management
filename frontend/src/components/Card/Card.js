@@ -6,7 +6,7 @@ class Card extends Component {
         const { card } = this.props;
 
         return (
-            <div className="relative cursor-pointer bg-white m-1 p-2.5 rounded-1 border border-black/10 shadow-sm text-3.5 break-words min-h-4.5 hover:bg-c-white">
+            <div className="relative cursor-pointer bg-white m-1 p-2.5 rounded-1 border border-black/10 shadow-sm text-3.5 break-words min-h-4.5 hover:bg-slate-100">
                 {card.text}
             </div>
         );

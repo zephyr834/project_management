@@ -13,8 +13,8 @@ class CardEditor extends Component {
         const { text } = this.state;
 
         if (e.keyCode === 13) {
-        e.preventDefault();
-        this.props.onSave(text);
+            e.preventDefault();
+            this.props.onSave(text);
         }
     };
 
@@ -23,22 +23,22 @@ class CardEditor extends Component {
     const { onSave, onCancel, onDelete, adding } = this.props;
 
     return (
-        <div className="Edit-Card">
-            <div className="Card">
-            <TextareaAutosize
-                autoFocus
-                className="Edit-Card-Textarea"
-                placeholder="Enter the text for this card..."
-                value={text}
-                onChange={this.handleChangeText}
-                onKeyDown={this.onEnter}
-            />
+        <div>
+            <div className="px-[5px]">
+                <TextareaAutosize
+                    autoFocus
+                    className="w-[100%] border-none resize-none outline-none text-3.5 min-h-4.5 hover:bg-slate-100 p-2.5"
+                    placeholder="Enter the text for this card..."
+                    value={text}
+                    onChange={this.handleChangeText}
+                    onKeyDown={this.onEnter}
+                />
             </div>
             <EditButtons
-            handleSave={() => onSave(text)}
-            saveLabel={adding ? "Add card" : "Save"}
-            handleDelete={onDelete}
-            handleCancel={onCancel}
+                handleSave={() => onSave(text)}
+                saveLabel={adding ? "Add card" : "Save"}
+                handleDelete={onDelete}
+                handleCancel={onCancel}
             />
         </div>
         );
